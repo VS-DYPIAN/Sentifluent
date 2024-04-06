@@ -60,3 +60,4 @@ The live project is deployed on https://share.streamlit.io/rubyruins/sentifluent
 - Run the `sentiment.py` file with `streamlit run sentiment.py`
 
 **Note:** to run the scraping and preprocessing scripts locally, you must have a version of `chromedriver.exe` that matches the one installed on your device. 
+# Sentifluent
