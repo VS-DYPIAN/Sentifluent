@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 import random
 
-@st.cache(persist = True, suppress_st_warning = True)
+@st.cache(persist = True, suppress_st_warning = False)
 def load_data(my_story):
 	if my_story == 'Crown of Glass' or not my_story:
 		my_data = pd.read_csv("Data/cog.csv")
@@ -184,4 +184,4 @@ st.write(f"{story} reached max popularity on {temp.Date.values[0]} with {temp.Co
 
 st.subheader("That's all for now!")
 st.markdown("**Thanks for making it all the way down here. 🎉**")
-st.markdown("As a featured writer on Wattpad, I've always wanted to do some sentiment analysis on what users thought of my stories. This pet project gave me the perfect opportunity to work with real data and visualise clear insights about characters from these tales! I've used Selenium and BeautifulSoup for scraping comments + Pandas and NLTK for data preprocessing and sentiment analysis +  Streamlit and Plotly Express for the dashboard and visulization. You can find the full code on Github [here](https://www.github.com/rubyruins/sentifluent), or give my work on Wattpad a quick read [here!](https://www.wattpad.com/user/rubyruins) 💖 ")
+st.markdown("As a featured writer on Wattpad, I've always wanted to do some sentiment analysis on what users thought of my stories. This pet project gave me the perfect opportunity to work with real data and visualise clear insights about characters from these tales! I've used Selenium and BeautifulSoup for scraping comments + Pandas and NLTK for data preprocessing and sentiment analysis +  Streamlit and Plotly Express for the dashboard and visulization. You can find the full code on Github [here](https://github.com/VS-DYPIAN/Sentiment_Analysis), or give my work on Wattpad a quick read [here!](https://www.wattpad.com/user/rubyruins) 💖 ")
