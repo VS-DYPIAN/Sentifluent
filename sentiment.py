@@ -96,7 +96,7 @@ def load_random():
 
 st.title('sentifluent.') 
 st.markdown('A dashboard for viewing story stats and character targeted sentiment analysis.')
-st.sidebar.markdown('[![Github Badge](https://img.shields.io/badge/-github-grey?style=for-the-badge&logo=github&logoColor=white&link=https://github.com/VS-DYPIAN/Sentifluent)](https://www.github.com/rubyruins/)')
+st.sidebar.markdown('[![Github Badge](https://img.shields.io/badge/-github-grey?style=for-the-badge&logo=github&logoColor=white&link=https://github.com/VS-DYPIAN/Sentifluent)](https://github.com/VS-DYPIAN/Sentifluent)')
 st.sidebar.title('Pick a story.')
 story = st.sidebar.selectbox('Story', ['Crown of Glass', 'Queen of Death'])
 data, names, defaults = load_data(story)
